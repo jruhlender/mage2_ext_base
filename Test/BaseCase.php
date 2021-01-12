@@ -19,7 +19,7 @@ class BaseCase
     /** @var \Magento\Framework\App\ResourceConnection */
     protected static $resource;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         parent::setUpBeforeClass();
         self::$manObj = \Magento\Framework\App\ObjectManager::getInstance();
